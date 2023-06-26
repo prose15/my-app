@@ -1,0 +1,15 @@
+.Footer{
+    text-align: center;
+    height: 20vh;
+    background-color: rgb(92, 70, 70);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+}

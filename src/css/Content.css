@@ -1,0 +1,14 @@
+.content{
+    background-color: cornsilk;
+    text-align: center;
+    height: 60vh;
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+} 
+button{
+    border-radius: 20px;
+}
