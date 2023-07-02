@@ -1,26 +1,16 @@
 
 import "../css/Content.css"
+import { Listitems } from "./Listitems"
 export const Content = ({item,handlechange,handledelete}) => {
-  console.log(item)
+  console.warn(item)
   return (
     <div className='content'>
       {(item.length)? (
-      <ul>
-        {
-        item.map((item)=>(
-        <li key={item.id}>
-          <input 
-        type='checkbox'
-        onChange={()=>handlechange(item.id)}
-        checked = {item.checked}
-          />
-        <label>{item.name}</label>
-        <button onClick={()=>handledelete(item.id)}>delete</button>
-        </li>
-          
-        ))
-       }
-      </ul>
+      <Listitems
+      item = {item}
+      handlechange = {handlechange}
+      handledelete = {handledelete}
+      />
       ):<p>Your list is empty</p>}
       
     </div> 
